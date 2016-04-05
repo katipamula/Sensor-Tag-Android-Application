@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".SensorTagActivity$DummySectionFragment">
+
+    <TextView
+        android:id="@+id/section_not_connected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/section_label_not_connected"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="203dp"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/section_not_connected"
+        android:layout_alignLeft="@+id/section_not_connected"
+        android:id="@+id/light_details"
+        android:visibility="gone">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/light_label_ambient"
+            android:id="@+id/light_label_ambient"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="40dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/title_na1"
+            android:id="@+id/light_details_ambient"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:gravity="center|center_horizontal"
+            android:textStyle="bold"
+            android:textSize="25dp" />
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
